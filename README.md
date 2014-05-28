@@ -33,6 +33,12 @@ trafficlights.registerRoutes(server, routes, options);
 
 server.listen(process.argv.splice(2)[0] || 1337);
 
-//Done!
-
 ```
+
+And done! It's that simple.
+
+### Config
+
+The configurable options are currently limited to "debug", which logs each request, and "controllerPath", which allows you to specify the controller path relative to the app root. 
+
+All controller files are required then the function "render" is called on them with parameters of res and req respectively.
