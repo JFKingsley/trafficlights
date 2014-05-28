@@ -1,6 +1,6 @@
 {
   "name": "trafficlights",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "The most awesomest routing system for ExpressJS.",
   "main": "main.js",
   "scripts": {

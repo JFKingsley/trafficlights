@@ -3,7 +3,7 @@ Routes
 
 ![Routes NPM](https://nodei.co/npm/trafficlights.png)
 
-> TrafficLights is an awesome routing system for ExpressJS. It is still a work in progress, but at the moment it allows for basic routing.
+> TrafficLights is an awesome, simple routing system for ExpressJS. It is still a work in progress, but at the moment it allows for basic routing.
 
 ### Install
 ```bash
