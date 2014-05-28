@@ -24,4 +24,4 @@ trafficlights.registerRoutes(server, routes, options);
 
 server.listen(process.argv.splice(2)[0] || 1337);
 
-console.log("Test Started");
+console.log("Example Started");
