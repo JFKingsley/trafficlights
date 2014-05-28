@@ -1,0 +1,21 @@
+{
+  "name": "trafficlights",
+  "version": "0.1.0",
+  "description": "The most awesomest routing system for ExpressJS.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JFKingsley/trafficlights"
+  },
+  "keywords": [
+    "routing",
+    "http",
+    "express"
+  ],
+  "author": "JFKingsley",
+  "license": "MIT",
+  "readmeFilename": "README.md"
+}
