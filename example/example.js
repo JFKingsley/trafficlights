@@ -3,21 +3,21 @@ var express = require('express');
 var server = express();
 
 var routes = [
-	{
-	    "path" : "/",
-	    "type" : "get",
-	    "controller" : "IndexController"
-	},
-	{
-	    "path" : "/health",
-	    "type" : "get",
-	    "controller" : "HealthController"
-	}
+     {
+         "path" : "/",
+         "type" : "get",
+         "controller" : "IndexController"
+     },
+     {
+         "path" : "/health",
+         "type" : "get",
+         "controller" : "HealthController"
+     }
 ];
 
 var options = {
-	controllerPath: "/controllers", // No dot
-	debug: true
+     controllerPath: "/controllers", // No dot
+     debug: true
 }
 
 trafficlights.registerRoutes(server, routes, options);
