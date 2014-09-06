@@ -3,7 +3,8 @@ var path = require('path');
 module.exports = {
 
  registerRoutes: function(server, routes, options) {
-          var controllerPath = path.dirname(require.main.filename)+"/controllers";
+          var controllerPath = path.join(path.dirname(require.main.filename), "controllers");
+
           if(options !== undefined && options.controllerPath !== undefined) {
                controllerPath = path.dirname(require.main.filename)+options.controllerPath;
           }
@@ -11,10 +12,15 @@ module.exports = {
           if(!Array.isArray(routes)) {
                throw new Error('TrafficLights encountered an invalid routes array.');
           }
-          
-          var lookup = {};
-          var i;
+
+          var lookup = {},
+              i;
+
           for (i = 0; i < routes.length; i += 1) {
+              if(routes[i].path.substring(routes[i].path.length - 1) !== '/') {
+                  routes[i].path += '/';
+              }
+
               lookup[routes[i].path] = routes[i];
           }
 
